@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">
+    <div class="mb-3">
+    Step :<input type="text" name="step" class="form-control">
+    </div>
+    <div class="mb-3">
+
+    Amount :<input type="text" name="amount" class="form-control">
+    </div>
+    <div class="mb-3">
+
+    Old Balance Origin :<input type="text" name="oldbalanceOrg" class="form-control">
+    </div>
+    <div class="mb-3">
+
+    New Balance Origin :<input type="text" name="newbalanceOrig" class="form-control">
+    </div>
+    <div class="mb-3">
+
+    Old Balance Destination :<input type="text" name="oldbalanceDest" class="form-control" ><br>
+    </div>
+    <div class="mb-3">
+
+    New Balance Destination :<input type="text" name="newbalanceDest" class="form-control"><br>
+    </div>
+    <div class="mb-3">
+
+    Type :<br>
+    CASH_IN<input type ="radio" value = "cash_in" name ='type'><br>
+
+    CASH_OUT<input type ="radio" value="cash_out" name ='type'><br>
+    DEBIT<input type ="radio" value="debit" name ='type'><br>
+    PAYMENT<input type ="radio" value="payment" name ='type'><br>
+    TRANSFER<input type ="radio" value="transfer" name ='type'><br>
+    Merchant :<input type = "checkbox" name ='merchant'>
+    </div>
+    <input type = "submit" class = "btn btn-secondary">
+</form>
+
+{% endblock %}

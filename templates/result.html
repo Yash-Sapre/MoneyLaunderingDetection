@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+    {% block content %}
+    {% if pred == 1 %}
+    It seems that the transaction is not a normal one.<img src="static/Suspicious.gif">
+    {% else %}
+    Nothing problematic with the transaction.<img src="static/Smile.gif">
+    {% endif %}
+{% endblock %}
